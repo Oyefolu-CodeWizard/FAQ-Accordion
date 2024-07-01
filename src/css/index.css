@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #326dee;
+  width: 100%;
+  height: 100vh;
+}
+.App .accordion {
+  color: #d32752;
+}
