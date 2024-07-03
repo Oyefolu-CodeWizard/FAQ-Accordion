@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Frontend Mentor - FAQ accordion
+
+![Design preview for the FAQ accordion coding challenge](./public/desktop-preview.jpg)
+
+## Welcome! 👋
+
+Thanks for checking out this front-end coding challenge.
+
 ## Available Scripts
 
 In the project directory, you can run:

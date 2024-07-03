@@ -7,7 +7,7 @@ function App() {
 }
 
 function Accordion() {
-  return <div className="accordion">Hello World!!!</div>;
+  return <div className="accordion"></div>;
 }
 
 export default App;
