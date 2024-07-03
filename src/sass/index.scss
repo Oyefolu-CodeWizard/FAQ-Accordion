@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+
 // variables & functions
 @import "variables";
 
-@import "body";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: $base-width;
+  height: $base-height;
+  font-family: "Work Sans", sans-serif;
+  background-color: $light-pink;
+}
+
+// base & layout
+@import "App";
+@import "Accordion";
+@import "AccordionItem";
+
+// colors
+
+// components (buttons, card, navbar)
+
+// utilities (margin, pardding, opacity)

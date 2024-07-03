@@ -1,0 +1,30 @@
+.accordion-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 1.2rem 0;
+  cursor: pointer;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+
+    p {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  .content {
+    font-size: 0.85rem;
+    grid-column: 2 / -1;
+    line-height: 1.3;
+  }
+}

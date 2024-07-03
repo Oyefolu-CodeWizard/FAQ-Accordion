@@ -1,17 +1,73 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.App {
+body {
   width: 100%;
   height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.App {
+  width: 100%;
+  background-image: url(../assets/background-pattern-desktop.svg);
+  min-height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.App .accordion {
-  color: hsl(0, 0%, 100%);
-  text-align: center;
+
+.accordion {
+  width: 35%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 25px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+}
+.accordion header {
+  display: flex;
+  gap: 20px;
+}
+.accordion header img {
+  width: 30px;
+  height: 31px;
+  margin: 9px 0;
+}
+.accordion header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.accordion-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 1.2rem 0;
+  cursor: pointer;
+}
+.accordion-item .title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.accordion-item .title p {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.accordion-item .title img {
+  width: 20px;
+  height: 21px;
+}
+.accordion-item .content {
+  font-size: 0.85rem;
+  grid-column: 2/-1;
+  line-height: 1.3;
 }

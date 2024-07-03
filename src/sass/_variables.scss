@@ -5,4 +5,11 @@ $grayish-purple: hsl(292, 16%, 49%);
 $dark-purple: hsl(292, 42%, 14%);
 
 // background image
-// $background-image: url(./images/background-pattern-desktop.svg);
+$background-image-url: "../assets/background-pattern-desktop.svg";
+
+// Default widths and height
+$base-width: 100%;
+$base-height: 100vh;
+
+// box shadow
+$base-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
