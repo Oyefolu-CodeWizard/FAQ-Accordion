@@ -1,5 +1,5 @@
 .accordion {
-  width: 35%;
+  width: 40%;
   background-color: $white;
   box-shadow: $base-shadow;
   padding: 25px;
@@ -7,18 +7,33 @@
   position: absolute;
   top: 50%;
 
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    padding: 20px;
+  }
+
   header {
     display: flex;
     gap: 20px;
-    // margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     img {
       width: 30px;
       height: 31px;
       margin: 9px 0;
+
+      @media screen and (max-width: 600px) {
+        width: 20px;
+        height: 21px;
+        margin: 9px 0;
+      }
     }
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
+
+      @media screen and (max-width: 600px) {
+        font-size: 2rem;
+      }
     }
   }
 }

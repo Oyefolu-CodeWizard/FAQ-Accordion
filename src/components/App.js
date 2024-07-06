@@ -1,8 +1,6 @@
-import iconMinus from "../assets/icon-minus.svg";
-import iconPlus from "../assets/icon-plus.svg";
-import iconStar from "../assets/icon-star.svg";
+import Accordion from "./Accordion";
 
-const faqs = [
+export const faqs = [
   {
     question: "What is Frontend Mentor, and how will it help me?",
     answer:
@@ -29,51 +27,6 @@ function App() {
   return (
     <div className="App">
       <Accordion />
-    </div>
-  );
-}
-
-function Accordion() {
-  return (
-    <div className="accordion">
-      <Header />
-      <AccordionsList faqs={faqs} />
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <header>
-      <img src={iconStar} alt="IconStar" />
-      <h1>FAQs</h1>
-    </header>
-  );
-}
-
-function AccordionsList({ faqs }) {
-  return (
-    <div className="accordion-list">
-      {faqs.map((faq, i) => (
-        <AccordionItem
-          question={faq.question}
-          answer={faq.answer}
-          num={i}
-          key={faq.question}
-        />
-      ))}
-    </div>
-  );
-}
-
-function AccordionItem({ question, answer, num }) {
-  return (
-    <div className="accordion-item">
-      <div className="title">
-        <p>{question}</p>
-        <img src={iconPlus} alt="IconPlus" />
-      </div>
-      <div className="content">{answer}</div>
     </div>
   );
 }
